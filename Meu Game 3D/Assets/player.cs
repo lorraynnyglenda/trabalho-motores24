@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         Debug.Log(message: "update");
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
 
-        UnityEngine.Vector3 direcao = new Vector3(x, y: 0, z: 0);
+        UnityEngine.Vector3 direcao = new Vector3(h, y: 0, z: v);
         rb.AddForce(direcao * velocidade * Time.deltaTime, ForceMode.Impulse);
-        if (transform.position.y < -5);
+        if (transform.position.y < -5)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
