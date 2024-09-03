@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camerafollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
     private Transform alvo;
     
@@ -17,6 +17,7 @@ public class camerafollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = alvo.position - offset;
+      transform.position = alvo.position - offset;
+      
     }
 }
