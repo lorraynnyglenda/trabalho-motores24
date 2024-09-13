@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - moeda
+  - "ch\xE3o"
+  - "Ch\xE3o"
   layers:
   - Default
   - TransparentFX
